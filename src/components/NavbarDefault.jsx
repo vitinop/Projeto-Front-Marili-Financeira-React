@@ -1,35 +1,43 @@
 import React from 'react'
 import { Container, Navbar, Nav} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import LogomarcaIco from '../assets/icons/logomarcacompleta.png'
+import LogomarcaIco from '../assets/icons/logo-cmp.png'
 export default function NavbarDefault() {
   return (
     <header>
-    <Navbar expand="lg" className="CorNav">
+    <Navbar expand="lg">
       <Container>
         <Navbar.Brand >
-         <Link className="nav-link d-flex flex-column align-items-center" to="/">
-            <img width="40"
-              height="40"
+         <Link className="nav-link" to="/">
+            <img width="135"
+              height="auto"
               src={LogomarcaIco} />
-              <h1 style={{ fontSize: '1rem'}}>Marili Réquia Corretora de Seguros</h1>
+              
           </Link>
         </Navbar.Brand>
         
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav ">
-          <Nav className="me-auto ">
-            <Link className="nav-link" to="/">
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        
+        <Navbar.Collapse id="basic-navbar-nav">
+          
+          <Nav className="ms-auto gap-2">
+            <Link className="mx-auto nav-link" to="/">
               Home
             </Link>
-            <Link className="nav-link" to="/pg_admin">
-              Admin
+            <Link className="mx-auto nav-link" to="/">
+              Quem somos
             </Link>
-            <Link className="nav-link" to="/pg_products">
-              Products
+            <Link className="mx-auto nav-link" to="/">
+              Para você
             </Link>
-            <Link className="nav-link" to="/pg_sobre">
-              About Us
+            <Link className="mx-auto nav-link" to="/">
+              Para sua empresa
+            </Link>
+            <Link className="mx-auto nav-link" to="/">
+              Assistência 24h
+            </Link>
+            <Link className="mx-auto nav-link p-1 m-1" to="/">
+              Fale Conosco
             </Link>
      
           </Nav>
