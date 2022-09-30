@@ -1,11 +1,16 @@
 import { Button, Container } from "react-bootstrap";
-import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image';
+
+
 import Car from '../assets/icons/car.png'
 import House from '../assets/icons/house.png'
 import SeguroDeVida from '../assets/icons/qualidade-de-vida.png'
 import Contrato from '../assets/icons/acordo.png'
 import Doutor from '../assets/icons/doutor.png'
 import Partner from '../assets/img/partner.png'
+import Favourite from '../assets/icons/favourite.png'
+import Chat from '../assets/icons/chat.png'
+import Configuracoes from '../assets/icons/configuracoes.png'
 import './Home.css'
 
 
@@ -31,44 +36,75 @@ export default function Home() {
         {/* Sessão dos mini-cards */}
         <section className="figures-cards d-flex flex-column  mt-5">
           <div className="card-section">
-            <div className="container-figures">
+
+            <Button bsPrefix className="btn-cards" href="#" type="submit">
               <img src={Car}></img>
               <p>Seguro Auto</p>
-            </div>
-            <div className="container-figures">
+            </Button>
+
+            <Button bsPrefix className="btn-cards" href="#" type="submit">
               <img src={House}></img>
               <p>Seguro Residencial</p>
-            </div>
-            <div className="container-figures">
+            </Button>
+
+            <Button bsPrefix className="btn-cards" href="#" type="submit">
               <img src={SeguroDeVida}></img>
               <p>Seguro de Vida</p>
-            </div>
-            <div className="container-figures">
+            </Button>
+
+            <Button bsPrefix className="btn-cards" href="#" type="submit">
               <img src={Contrato}></img>
               <p>Garantia contratual</p>
-            </div>
-            <div className="container-figures">
+
+            </Button>
+
+            <Button bsPrefix className="btn-cards" href="#" type="submit">
               <img src={Doutor}></img>
               <p>RC Profissional</p>
-            </div>
+            </Button>
           </div>
         </section>
       </Container>
 
 
       <Container fluid>
-
         {/* Sessão das seguradoras */}
         <section className="d-flex justify-content-center  mt-5 partner">
-            <div className="partnerText">
-                  <h3>Nossas seguradoras parceiras</h3>
-                  <div className="partnerIcon">
-                      <Image fluid src={Partner} alt="" />
-                  </div>
+          <div className="partnerText">
+            <h3>Nossas seguradoras parceiras</h3>
+            <div className="partnerIcon">
+              <Image fluid src={Partner} alt="" />
             </div>
+          </div>
         </section>
-
       </Container>
+
+      <Container fluid>
+        <section className="whyMarili d-flex flex-row mt-5">
+          <div className="whyMariliTextRight w-50">
+            <h3>
+              Porque escolher <b>Marili Réquia?</b>
+            </h3>
+            <p>Oferecemos soluções de seguros para
+              proteger suas conquistas de forma simples, rápida e econômica.</p>
+            <spam>
+              <Button size="lg">Quero contratar</Button>
+            </spam>
+          </div>
+
+          <div className="whyMariliLeft  w50">
+            <div className="whyMariliTextLeft">
+              <img src={Favourite} alt="" />
+              <p>Gestão de alta qualidade, credibilidade e confiança, 
+                excelência em atendimento.
+              </p>
+
+            </div>
+          </div>
+        </section>
+      </Container>
+
+
 
     </>
 
