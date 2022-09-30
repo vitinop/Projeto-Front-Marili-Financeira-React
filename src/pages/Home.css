@@ -1,0 +1,43 @@
+/* Espaçamento do texto */
+.text-banner div{
+    padding: 1.5rem;
+}
+
+/* Configuração dos mini-cards */
+/* Card section */
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+/* Card container */
+.container-figures{
+width: 14rem;
+display: flex;  
+align-items: center;
+flex-wrap: wrap;
+justify-content:space-evenly;
+padding: .2rem;
+margin: .5rem;
+background: rgba( 255, 255, 255, 1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 8.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* Texto do card */
+.container-figures p{
+    font-size: 1.4rem;
+    padding: .5rem;
+    text-align: justify;
+    width: 5em;
+}
+
+/* Img do card */
+
+.container-figures img{
+    width: 2.5rem;
+}
