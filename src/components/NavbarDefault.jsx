@@ -2,10 +2,11 @@ import React from 'react'
 import { Container, Navbar, Nav} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import LogomarcaIco from '../assets/icons/logo-cmp.png'
+import "./NavbarDefault.css"
 export default function NavbarDefault() {
   return (
     <header>
-    <Navbar expand="lg">
+    <Navbar expand="lg" className="NavStyle">
       <Container>
         <Navbar.Brand >
          <Link className="nav-link" to="/">

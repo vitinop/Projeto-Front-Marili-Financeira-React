@@ -7,7 +7,7 @@ import NavbarDefault from "./components/NavbarDefault";
 function App() {
   return (
     <div className="App">
-      <NavbarDefault></NavbarDefault>
+      <NavbarDefault/>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
