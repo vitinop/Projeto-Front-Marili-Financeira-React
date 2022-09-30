@@ -1,9 +1,11 @@
 import { Button, Container } from "react-bootstrap";
+import Image from 'react-bootstrap/Image'
 import Car from '../assets/icons/car.png'
 import House from '../assets/icons/house.png'
 import SeguroDeVida from '../assets/icons/qualidade-de-vida.png'
 import Contrato from '../assets/icons/acordo.png'
 import Doutor from '../assets/icons/doutor.png'
+import Partner from '../assets/img/partner.png'
 import './Home.css'
 
 
@@ -26,7 +28,7 @@ export default function Home() {
       </Container>
 
       <Container fluid>
-        {/* Seção dos mini-cards */}
+        {/* Sessão dos mini-cards */}
         <section className="figures-cards d-flex flex-column  mt-5">
           <div className="card-section">
             <div className="container-figures">
@@ -54,12 +56,15 @@ export default function Home() {
       </Container>
 
 
-      <Container>
+      <Container fluid>
 
-        {/* Seção das seguradoras */}
-        <section className="d-flex mt-5 partner">
+        {/* Sessão das seguradoras */}
+        <section className="d-flex justify-content-center  mt-5 partner">
             <div className="partnerText">
-              
+                  <h3>Nossas seguradoras parceiras</h3>
+                  <div className="partnerIcon">
+                      <Image fluid src={Partner} alt="" />
+                  </div>
             </div>
         </section>
 

@@ -38,6 +38,23 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 /* Img do card */
 
-.container-figures img{
+.container-figures Image{
     width: 2.5rem;
+}
+
+
+/* Configuração das parcerias */
+
+.partner{
+    padding: 5rem;
+    
+}
+
+.partner h3{
+    text-align: center;
+}
+
+.partnerIcon{
+    padding: 2rem;
+  
 }
