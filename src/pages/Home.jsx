@@ -1,7 +1,7 @@
 import { Button, Container } from "react-bootstrap";
 import Image from 'react-bootstrap/Image';
 
-
+import Nav from 'react-bootstrap/Nav';
 import Car from '../assets/icons/car.png'
 import House from '../assets/icons/house.png'
 import SeguroDeVida from '../assets/icons/qualidade-de-vida.png'
@@ -11,6 +11,8 @@ import Partner from '../assets/img/partner.png'
 import Favourite from '../assets/icons/favourite.png'
 import Chat from '../assets/icons/chat.png'
 import Configuracoes from '../assets/icons/configuracoes.png'
+
+import CarroBolha from '../assets/img/carro-bolha.png'
 import './Home.css'
 
 
@@ -82,8 +84,9 @@ export default function Home() {
 
 
       <Container fluid>
-        <section className="whyMarili d-flex flex-row mt-5">
-          <div className="whyMariliTextRight w-50">
+        <section className="whyMarili d-flex mt-5 ">
+          <div className="whyMariliContainer "></div>
+          <div className="whyMariliTextRight ">
             <h3>
               Porque escolher <b>Marili Réquia?</b>
             </h3>
@@ -92,22 +95,84 @@ export default function Home() {
             <spam>
               <Button size="lg">Quero contratar</Button>
             </spam>
+
+
           </div>
 
-          <div className="whyMariliLeft  w50">
-            <div className="whyMariliTextLeft">
+          <div className="whyMariliLeft">
+            <div className="whyMariliTextLeft d-flex ">
               <img src={Favourite} alt="" />
               <p>Gestão de alta qualidade, credibilidade e confiança,
                 excelência em atendimento.
               </p>
+            </div>
 
+            <div className="whyMariliTextLeft d-flex ">
+              <img src={Chat} alt="" />
+              <p>Temos especialistas disponíveis por chat ou telefone
+                para tirar dúvidas,
+                negociar e fechar o seguro ideal para você.
+              </p>
+            </div>
+            <div className="whyMariliTextLeft d-flex ">
+              <img src={Configuracoes} alt="" />
+              <p>Os planos e assistências das seguradoras podem
+                ser customizados de acordo com seu perfil e suas
+                necessidades.
+                Nada de cobertura que você não precisa.
+              </p>
             </div>
           </div>
+
         </section>
 
       </Container>
 
 
+      <Container fluid className="mt-5">
+        {/* Sessão do Economize */}
+        <section className=" sc1 d-flex">
+          <div className="p1">
+            <p><small>Economize tempo e dinheiro, contrate seu seguro <b>100% online</b></small></p>
+            <div className="p2">
+              <p>
+                Seguro personalizado do seu jeito é aqui!
+                Sem papelada e sem sair de casa. São 17
+                seguradoras para comparar preços, planos,
+                coberturas e fazer a melhor escolha para
+                proteger o que é seu. Tudo em um só lugar!
+              </p>
+            </div>
+
+
+          </div>
+          <div className="carroBolha">
+            <img src={CarroBolha} alt="" />
+          </div>
+
+
+        </section>
+      </Container>
+
+      <Container>
+        {/* Sessão como funciona */}
+        <section className="howItWorks d-flex">
+          <div className="howItWorksTitle">
+            <h4><b>Como  </b>funciona?</h4>
+          </div>
+          <div className="howItWorksNav">
+            <Nav defaultActiveKey="/home" as="ul">
+              <Nav.Item as="li">
+                <Nav.Link eventKey="link-1">Auto</Nav.Link>
+                
+              </Nav.Item>
+              <Nav.Item as="li">
+                <Nav.Link eventKey="link-2">Outros seguros</Nav.Link>
+              </Nav.Item>
+            </Nav>
+          </div>
+        </section>
+      </Container>
 
 
 

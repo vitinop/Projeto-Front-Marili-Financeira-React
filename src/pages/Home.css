@@ -66,11 +66,15 @@
 
 /* Configuração de why Marili */
 .whyMarili {
+    
     padding: 5rem;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: baseline;
     background-color: rgba(240, 207, 203, 0.25);
+    flex-wrap: wrap;
 
 }
-
 
 
 .whyMariliTextRight {
@@ -81,6 +85,102 @@
     padding: 2.5rem;
 }
 
+.whyMariliTextRight h3 {
+    width: 14rem;
+}
+
+.whyMariliTextRight p {
+    font-size: 1.5rem;
+    width: 25rem;
+}
+
 .whyMariliTextRight button {
     margin: 5rem;
+}
+
+
+.whyMariliLeft {
+
+    padding-left: 1rem;
+
+}
+
+.whyMariliTextLeft {
+
+    margin: 2rem;
+    width: 30rem;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.whyMariliTextLeft img {
+    padding: .2rem;
+    margin-right: .5rem;
+    width: 5rem;
+
+}
+
+
+/* Configuração do economize */
+
+.sc1 {
+    gap: 0.5rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.p1 p {
+    padding: 1rem;
+    width: 25rem;
+    font-size: 2.5rem;
+}
+
+.p2 p {
+    width: 30rem;
+    font-size: 1.5rem;
+   
+}
+
+.carroBolha {
+
+    padding: 3rem;
+}
+
+/* configuração do howItWorks */
+
+.howItWorks{
+    padding: 5rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.howItWorks h4{
+    
+    font-size: 2rem;
+}
+
+.howItWorksNav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+   
+}
+
+
+.howItWorksNav a{
+    text-decoration: none;
+    color: black;
+}
+
+.howItWorksNav li{
+    font-size: 1.3rem;
+    margin: 2rem;
+    text-decoration:underline;
+    color: black;
+    
 }
