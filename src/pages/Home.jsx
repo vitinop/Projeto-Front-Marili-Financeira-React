@@ -79,6 +79,8 @@ export default function Home() {
         </section>
       </Container>
 
+
+
       <Container fluid>
         <section className="whyMarili d-flex flex-row mt-5">
           <div className="whyMariliTextRight w-50">
@@ -95,14 +97,17 @@ export default function Home() {
           <div className="whyMariliLeft  w50">
             <div className="whyMariliTextLeft">
               <img src={Favourite} alt="" />
-              <p>Gestão de alta qualidade, credibilidade e confiança, 
+              <p>Gestão de alta qualidade, credibilidade e confiança,
                 excelência em atendimento.
               </p>
 
             </div>
           </div>
         </section>
+
       </Container>
+
+
 
 
 

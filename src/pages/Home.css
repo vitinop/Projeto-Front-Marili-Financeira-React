@@ -1,38 +1,39 @@
 /* Espaçamento do texto */
-.text-banner div{
+.text-banner div {
     padding: 1.5rem;
 }
 
 /* Configuração dos mini-cards */
 /* Card section */
-.card-section{
+.card-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 2rem;
 }
+
 /* Botão container */
-.btn-cards{
-color: black;
-text-decoration: none;
-width: 14rem;
-display: flex;  
-align-items: center;
-flex-wrap: wrap;
-justify-content:space-evenly;
-padding: .2rem;
-margin: .5rem;
-background: rgba( 255, 255, 255, 1 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 8.5px );
--webkit-backdrop-filter: blur( 8.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+.btn-cards {
+    color: black;
+    text-decoration: none;
+    width: 14rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: .2rem;
+    margin: .5rem;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 
 /* Texto do card */
-.btn-cards p{
+.btn-cards p {
     font-size: 1.4rem;
     padding: .5rem;
     text-align: justify;
@@ -41,47 +42,45 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 /* Img do card */
 
-.btn-cards Image{
+.btn-cards Image {
     width: 2.5rem;
 }
 
 
 /* Configuração das parcerias */
 
-.partner{
+.partner {
     padding: 5rem;
-    
+
 }
 
-.partner h3{
+.partner h3 {
     text-align: center;
 }
 
-.partnerIcon{
+.partnerIcon {
     padding: 2rem;
-  
+
 }
 
 
 /* Configuração de why Marili */
-.whyMarili{
+.whyMarili {
     padding: 5rem;
     background-color: rgba(240, 207, 203, 0.25);
-    
+
 }
 
 
 
-.whyMariliTextRight{
+.whyMariliTextRight {
     display: flex;
     flex-direction: column;
     align-content: space-between;
     flex-wrap: wrap;
     padding: 2.5rem;
-} 
+}
 
-.whyMariliTextRight button{
+.whyMariliTextRight button {
     margin: 5rem;
-} 
-
-
+}
