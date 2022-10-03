@@ -11,6 +11,7 @@ import Partner from '../assets/img/partner.png'
 import Favourite from '../assets/icons/favourite.png'
 import Chat from '../assets/icons/chat.png'
 import Configuracoes from '../assets/icons/configuracoes.png'
+import MaleMan from '../assets/icons/male_man.svg'
 
 import CarroBolha from '../assets/img/carro-bolha.png'
 import './Home.css'
@@ -83,7 +84,7 @@ export default function Home() {
 
 
 
-      <Container fluid>
+      <Container fluid className="whyMariliContainer1 d-flex w-auto p-0">
         <section className="whyMarili d-flex mt-5 ">
           <div className="whyMariliContainer "></div>
           <div className="whyMariliTextRight ">
@@ -154,24 +155,42 @@ export default function Home() {
         </section>
       </Container>
 
-      <Container>
+      <Container fluid className="p-0 d-flex mt-5">
         {/* Sessão como funciona */}
-        <section className="howItWorks d-flex">
-          <div className="howItWorksTitle">
-            <h4><b>Como  </b>funciona?</h4>
+        <section class="howItWorksSection">
+          <div class="textHowItWorks">
+            <p>
+              <b>Como </b>funciona?</p>
           </div>
-          <div className="howItWorksNav">
-            <Nav defaultActiveKey="/home" as="ul">
-              <Nav.Item as="li">
-                <Nav.Link eventKey="link-1">Auto</Nav.Link>
-                
-              </Nav.Item>
-              <Nav.Item as="li">
-                <Nav.Link eventKey="link-2">Outros seguros</Nav.Link>
-              </Nav.Item>
-            </Nav>
-          </div>
+
+          <ul class="nav nav-tabs d-flex justify-content-center colunm howItWorksList" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                <i class="bi bi-person"></i>Carros</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                <i class="bi bi-person"></i> Outros Serviços</button>
+            </li>
+
+          </ul>
+        
+
+              <div class="cardsSection tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+       
+
+            </div>
+
+
+
+
         </section>
+
       </Container>
 
 

@@ -66,7 +66,7 @@
 
 /* Configuração de why Marili */
 .whyMarili {
-    
+    width: 100%;
     padding: 5rem;
     align-content: space-around;
     justify-content: space-around;
@@ -75,7 +75,6 @@
     flex-wrap: wrap;
 
 }
-
 
 .whyMariliTextRight {
     display: flex;
@@ -108,7 +107,7 @@
 .whyMariliTextLeft {
 
     margin: 2rem;
-    width: 30rem;
+    width: 24rem;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
@@ -142,45 +141,23 @@
 .p2 p {
     width: 30rem;
     font-size: 1.5rem;
-   
+
 }
 
 .carroBolha {
-
     padding: 3rem;
 }
 
 /* configuração do howItWorks */
 
-.howItWorks{
-    padding: 5rem;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
 
-.howItWorks h4{
-    
-    font-size: 2rem;
-}
-
-.howItWorksNav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.howItWorksSection p {
     padding: 2rem;
-   
+    font-size: 1.5rem;
+
 }
 
+.howItWorksList {
+    padding: 1rem;
 
-.howItWorksNav a{
-    text-decoration: none;
-    color: black;
-}
-
-.howItWorksNav li{
-    font-size: 1.3rem;
-    margin: 2rem;
-    text-decoration:underline;
-    color: black;
-    
 }
