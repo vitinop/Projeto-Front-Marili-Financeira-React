@@ -11,11 +11,11 @@ import Partner from '../assets/img/partner.png'
 import Favourite from '../assets/icons/favourite.png'
 import Chat from '../assets/icons/chat.png'
 import Configuracoes from '../assets/icons/configuracoes.png'
-import MaleMan from '../assets/icons/male_man.svg'
+
 
 import CarroBolha from '../assets/img/carro-bolha.png'
 import './Home.css'
-
+import '../App.css'
 
 export default function Home() {
   return (
@@ -178,16 +178,12 @@ export default function Home() {
             </li>
 
           </ul>
-        
 
-              <div class="cardsSection tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-
-       
-
-            </div>
+          <div class="cardsSection tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
 
 
 
+          </div>
 
         </section>
 

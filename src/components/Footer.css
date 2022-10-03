@@ -1,0 +1,25 @@
+.footerGlobalDescription h3{
+    text-align: center;
+    padding: 2rem;
+}
+
+.footerGlobalContact p{
+    line-height: .4rem;
+    text-align: center;
+}
+
+
+
+.footerGlobalSocialIcons img{
+    
+    width: 4.5rem;
+}
+
+
+.footerCopyright p{
+    width: 45rem;
+    font-size: .8rem;
+    text-align: center;
+    padding-bottom: 1.5em;
+
+}
