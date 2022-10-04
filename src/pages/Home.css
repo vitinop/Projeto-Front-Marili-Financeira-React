@@ -1,163 +1,37 @@
-/* Espaçamento do texto */
-.text-banner div {
-    padding: 1.5rem;
-}
-
-/* Configuração dos mini-cards */
-/* Card section */
-.card-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2rem;
-}
-
-/* Botão container */
-.btn-cards {
-    color: black;
-    text-decoration: none;
-    width: 14rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: .2rem;
-    margin: .5rem;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(8.5px);
-    -webkit-backdrop-filter: blur(8.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-
-/* Texto do card */
-.btn-cards p {
-    font-size: 1.4rem;
-    padding: .5rem;
-    text-align: justify;
-    width: 5em;
-}
-
-/* Img do card */
-
-.btn-cards Image {
-    width: 2.5rem;
-}
-
-
-/* Configuração das parcerias */
-
-.partner {
-    padding: 5rem;
-
-}
-
-.partner h3 {
+.whySustainability h1, h3, p{
     text-align: center;
 }
 
-.partnerIcon {
-    padding: 2rem;
-
+.whySustainability p{
+    font-size: .9rem;
 }
 
 
-/* Configuração de why Marili */
-.whyMarili {
-    width: 100%;
-    padding: 5rem;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: baseline;
-    background-color: rgba(240, 207, 203, 0.25);
-    flex-wrap: wrap;
 
+.purposeSection{
+   
+    background-color: #b9b78f;
 }
 
-.whyMariliTextRight {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    flex-wrap: wrap;
-    padding: 2.5rem;
+.purposeText h3,p{
+    margin-top: 5rem;
+    color: #fff;
 }
 
-.whyMariliTextRight h3 {
-    width: 14rem;
+.purposeText p{
+    width: 45rem;
+    font-size: small;
+    text-align: center;
+    line-height: 1.8rem;
 }
 
-.whyMariliTextRight p {
-    font-size: 1.5rem;
-    width: 25rem;
+.imgCardContainer img{
+    width: 350px;
+    height: 400px;
+    z-index: 3;
 }
 
-.whyMariliTextRight button {
-    margin: 5rem;
-}
-
-
-.whyMariliLeft {
-
-    padding-left: 1rem;
-
-}
-
-.whyMariliTextLeft {
-
-    margin: 2rem;
-    width: 24rem;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.whyMariliTextLeft img {
-    padding: .2rem;
-    margin-right: .5rem;
-    width: 5rem;
-
-}
-
-
-/* Configuração do economize */
-
-.sc1 {
-    gap: 0.5rem;
-    padding: 1rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-
-.p1 p {
-    padding: 1rem;
-    width: 25rem;
-    font-size: 2.5rem;
-}
-
-.p2 p {
-    width: 30rem;
-    font-size: 1.5rem;
-
-}
-
-.carroBolha {
-    padding: 3rem;
-}
-
-/* configuração do howItWorks */
-
-
-.howItWorksSection p {
-    padding: 2rem;
-    font-size: 1.5rem;
-
-}
-
-.howItWorksList { 
-    padding: 1rem;
-
-}
+.imgCardContainerText p{
+    position: absolute;
+    color: black;
+} 
