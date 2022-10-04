@@ -1,15 +1,15 @@
 export default function Whatsapp() {
   return (
     <>
-      <div class="whatsapp">
+      <div className="whatsapp">
         <a
           href="https://api.whatsapp.com/send?phone=5551999515486"
           target="_blank"
-          style={{position:'fixed', bottom:'20px', right:'30px',}}
+          style={{position:'fixed', bottom:'20px', right:'30px', zIndex:'1'}}
        
         >
           <svg
-            enable-background="new 0 0 512 512"
+            enableBackground="new 0 0 512 512"
             width="50"
             height="50"
             version="1.1"
