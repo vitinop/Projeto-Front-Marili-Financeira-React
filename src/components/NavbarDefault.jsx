@@ -8,6 +8,7 @@ export default function NavbarDefault() {
     <header>
     <Navbar expand="lg" className="NavStyle">
       <Container>
+        
         <Navbar.Brand >
          <Link className="nav-link" to="/">
             <img width="135"
@@ -23,22 +24,22 @@ export default function NavbarDefault() {
           
           <Nav className="ms-auto gap-2">
             <Link className="mx-auto nav-link" to="/">
-              Home
+              Início
             </Link>
             <Link className="mx-auto nav-link" to="/">
-              Quem somos
+              Como Funciona
             </Link>
             <Link className="mx-auto nav-link" to="/">
-              Para você
+              Objetivos
             </Link>
             <Link className="mx-auto nav-link" to="/">
-              Para sua empresa
+              Desafios
             </Link>
             <Link className="mx-auto nav-link" to="/">
-              Assistência 24h
+              Blog
             </Link>
             <Link className="mx-auto nav-link p-1 m-1" to="/">
-              Fale Conosco
+              Vamos Conversar ?
             </Link>
      
           </Nav>
