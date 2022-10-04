@@ -6,12 +6,12 @@ import LinkedinIcon from '../assets/icons/linkedin_logo_icon.svg'
 
 import '../components/Footer.css'
 import '../App.css'
-const footer = () => {
+export default function Footer(){
     return (
         <>
-            <Container fluid className=' mt-5 p-0 '>
+            <Container fluid className=' mt-5 p-0 ' >
                 <footer  className='footerGlobal d-flex flex-wrap justify-content-center'>
-                    <div className="footerGlobalDescription">
+                    <div className="footerGlobalDescription ">
                         <h3>Marili Réquia Corretora de Seguros</h3>
                         <div className='footerGlobalContact'>
                             <p>negocios@marilirequia.com.br</p>
@@ -23,7 +23,7 @@ const footer = () => {
                             <Button variant="link" href='/'><img src={LinkedinIcon} alt="" /></Button>
                             <Button variant="link" href='/'><img src={FacebookIcon} alt="" /></Button>
                         </div>
-                        <div className="footerCopyright d-flex flex-wrap flex-colunm;">
+                        <div className="footerCopyright d-flex w-75">
                             <p>©2022 por Marili Réquia Corretora de Seguros
                                 A marca Marili Réquia é de propriedade da Flight Corretora de Seguros Ltda.
                                 Todas as operações realizadas pela Marili Requia Corretora de Seguros são executadas pela Flight Corretora de Seguros Ltda, autorizada a funcionar pela Susep,
@@ -37,4 +37,3 @@ const footer = () => {
     )
 }
 
-export default footer
