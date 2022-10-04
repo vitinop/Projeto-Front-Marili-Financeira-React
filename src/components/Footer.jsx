@@ -9,7 +9,7 @@ import '../App.css'
 export default function Footer(){
     return (
         <>
-            <Container fluid className=' mt-5 p-0 ' >
+            <Container className='mt-5 p-0' >
                 <footer  className='footerGlobal d-flex flex-wrap justify-content-center'>
                     <div className="footerGlobalDescription ">
                         <h3>Marili Réquia Corretora de Seguros</h3>
