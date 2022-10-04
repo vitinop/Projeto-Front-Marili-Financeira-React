@@ -20,11 +20,10 @@ export default function Home() {
   return (
     <>
       <Container>
-        <section className="WelcomeSection mt-5 d-flex justify-content-center">
+        <section className="mt-5 d-flex justify-content-center">
           <div className="d-flex flex-column w-50">
             <h1 className="text-banner">
-              <div>​O que é
-              Sustentabilidade Financeira?</div>
+              ​O que é Sustentabilidade Financeira?
             </h1>
             <h3>Bem vindo (a)!</h3>
             <h2 className="text-break">
@@ -38,34 +37,18 @@ export default function Home() {
         </section>
       </Container>
 
-      <Container fluid>
-        {/* Sessão dos mini-cards */}
-        <section className="figures-cards d-flex flex-column  mt-5">
-          <div className="card-section">
-            <Button bsPrefix className="btn-cards" href="#" type="submit">
-              <img src={Car}></img>
-              <p>Seguro Auto</p>
-            </Button>
+      <Container>
+        <section className="mt-5 d-flex justify-content-center">
+          <div className="d-flex flex-column w-50">
+            <h1 className="text-banner">Consultoria com Propósito</h1>
 
-            <Button bsPrefix className="btn-cards" href="#" type="submit">
-              <img src={House}></img>
-              <p>Seguro Residencial</p>
-            </Button>
-
-            <Button bsPrefix className="btn-cards" href="#" type="submit">
-              <img src={SeguroDeVida}></img>
-              <p>Seguro de Vida</p>
-            </Button>
-
-            <Button bsPrefix className="btn-cards" href="#" type="submit">
-              <img src={Contrato}></img>
-              <p>Garantia contratual</p>
-            </Button>
-
-            <Button bsPrefix className="btn-cards" href="#" type="submit">
-              <img src={Doutor}></img>
-              <p>RC Profissional</p>
-            </Button>
+            <h2 className="text-break">
+              A MR surgiu da necessidade de proteger a segurança patrimonial dos
+              nossos clientes. Atuamos com atendimento personalizado, traçando
+              um planejamento estratégico de sustentabilidade financeira para o
+              seu patrimônio. Ajudamos nossos clientes a viabilizar seus
+              objetivos e transformar seus desafios em tranquilidade.
+            </h2>
           </div>
         </section>
       </Container>
