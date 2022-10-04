@@ -3,11 +3,11 @@ import Image from "react-bootstrap/Image";
 import Carousel from 'react-bootstrap/Carousel';
 
 import Nav from "react-bootstrap/Nav";
-import Familia from '../assets/img/familia_feliz_1.jpg'
-import Carro from '../assets/img/carro-bolha.png'
+import Familia from '../../assets/img/familia_feliz_1.jpg'
+import Carro from '../../assets/img/carro-bolha.png'
 
 import "./Home.css";
-import "../App.css";
+
 
 export default function Home() {
   return (

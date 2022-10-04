@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import "./App.css";
 import NavbarDefault from "./components/NavbarDefault/NavbarDefault";
 import Whatsapp from "./components/Whatsapp"
@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer"
 import ComoFunciona from "./pages/ComoFunciona/ComoFunciona";
 import Objetivos from "./pages/Objetivos/Objetivos";
 import VamosConversar from "./pages/VamosConversar/VamosConversar"
-function App() {
+export default function App() {
   return (
     <div className="App">
       <NavbarDefault />
@@ -24,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+
