@@ -23,4 +23,73 @@
 }
 
 
+/* Configuração dos cards (img a definir) */
+.imgCardContainer {
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+    background-color: black;
+    /* background-image: url('../assets/img/carro-bolha.png');
+   background-repeat: no-repeat;
+   background-size: cover; */
+    z-index: 1;
+
+
+}
+
+.imgCardContainer p {
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 400;
+
+}
+
+
+
+/* Configuração dos depoimentos */
+.titleDepositions h3 {
+    color: #b9b78f;
+    font-size: 2rem;
+}
+
+.titleDepositions h4 {
+    text-align: center;
+}
+
+.titleDepositions p {
+    color: black;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+
+/* Card dos depoimentos */
+
+.card-container {
+    margin: 2.5rem;
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+}
+
+
+/* img do depoimentos(Quote */
+.card-container img {
+    width: 3.5rem;
+    height: 3rem;
+}
+
+.card-container p {
+    font-size: 0.9rem;
+
+
+}
+
+.nameClient {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+
 
