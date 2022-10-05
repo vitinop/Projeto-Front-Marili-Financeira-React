@@ -1,37 +1,26 @@
-.whySustainability h1, h3, p{
-    text-align: center;
+.videobg video{
+    object-fit: cover;
 }
-
-.whySustainability p{
-    font-size: .9rem;
-}
-
+.overlay {  
+    background-color: rgba(0,0,0,.2);
+ }
 
 
 .purposeSection{
-   
     background-color: #b9b78f;
 }
 
-.purposeText h3,p{
-    margin-top: 5rem;
+.purposeText h3{
+   
     color: #fff;
 }
 
 .purposeText p{
-    width: 45rem;
     font-size: small;
     text-align: center;
     line-height: 1.8rem;
+    color: #fff;
 }
 
-.imgCardContainer img{
-    width: 350px;
-    height: 400px;
-    z-index: 3;
-}
 
-.imgCardContainerText p{
-    position: absolute;
-    color: black;
-} 
+

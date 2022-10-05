@@ -10,8 +10,8 @@ export default function Whatsapp() {
         >
           <svg
             enableBackground="new 0 0 512 512"
-            width="50"
-            height="50"
+            width="60"
+            height="60"
             version="1.1"
             viewBox="0 0 512 512"
             
