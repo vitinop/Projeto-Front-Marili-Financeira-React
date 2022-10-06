@@ -1,13 +1,10 @@
-import { Button, Container, Figure } from "react-bootstrap";
-
+import {Container} from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-
 import videobg from "../../assets/bgvideo.mp4";
 import Familia from "../../assets/img/familia_feliz_1.jpg";
-import Carro from "../../assets/img/carro-bolha.png";
 import Quote from "../../assets/icons/quote.png";
 import { Animated } from "react-animated-css";
-
+import GoogleMapsContainer from "../../components/GoogleMapsContainer/GoogleMapsContainer"
 import "./Home.css";
 
 export default function Home() {
@@ -15,14 +12,14 @@ export default function Home() {
     <>
       <section className="w-100">
         <video
-          className="videobg position-absolute mw-100"
+          className="videobg position-absolute"
           src={videobg}
           autoPlay
           loop
           muted
         />
         <div className="overlay position-absolute w-100 h-100"></div>
-        <div className="position-relative p-5 d-flex flex-column align-items-center text-center text-light">
+        <div className="p-3 position-relative d-flex flex-column align-items-center text-center text-light">
           <Animated 
           animationIn="fadeInUp"
           animationInDuration={1000}
@@ -53,8 +50,8 @@ export default function Home() {
         </div>
       </section>
 
-      <Container fluid className="p-0 mt-5 position-relative">
-        <section className="purposeSection mt-5 d-flex justify-content-center">
+      <Container fluid className="p-0 position-relative">
+        <section className="purposeSection d-flex justify-content-center">
           <div className="purposeText d-flex row flex-wrap justify-content-center text-center">
             <h3 className="p-1">​Consultoria com Propósito</h3>
             <p className="p-2 w-85">
@@ -114,7 +111,7 @@ export default function Home() {
 
       {/* Sessaõ dos depoimentos */}
       <Container className="mt-5">
-        <section className="d-flex flex-wrap justify-content-center">
+        <section className="d-flex flex-wrap justify-content-center text-center">
           <div className="titleDepositions">
             <h3>Depoimentos de Clientes</h3>
             <h4 className="p-3">O que dizem por aí?</h4>
@@ -200,6 +197,8 @@ export default function Home() {
           </div>
         </section>
       </Container>
+      <GoogleMapsContainer/>
+      
     </>
   );
 }

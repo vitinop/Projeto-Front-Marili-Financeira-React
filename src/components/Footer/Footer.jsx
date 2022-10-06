@@ -10,7 +10,7 @@ export default function Footer() {
     <>
       <Container fluid className="footerGlobal">
         <footer>
-          <div className="footerGlobalDescription d-flex flex-column align-items-center">
+          <div className="footerGlobalDescription d-flex flex-column align-items-center text-center">
             <h3>Marili Réquia Corretora de Seguros</h3>
             <div className="footerGlobalContact text-center">
               <p>negocios@marilirequia.com.br</p>

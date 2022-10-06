@@ -1,6 +1,6 @@
 .map-responsive{
   overflow:hidden;
-  padding-bottom:50%;
+  padding-bottom:25%;
   position:relative;
   height:0;
 }
@@ -10,4 +10,11 @@
   height:100%;
   width:100%;
   position:absolute;
+}
+
+@media screen and (max-width: 480px){
+  .map-responsive{
+    padding-bottom:50%;
+
+  }
 }
