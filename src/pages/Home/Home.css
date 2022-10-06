@@ -9,12 +9,14 @@
  }
 
 
+/* Configuração de Consultoria com propósito */
+
 .purposeSection{
     background-color: #b9b78f;
 }
 
 .purposeText h3{
-   
+    font-size: 2rem;
     color: #fff;
 }
 
@@ -94,7 +96,30 @@
     font-size: 1.2rem;
 }
 
+/* Configuração do vamos conversar */
 
+.talk{
+    background-color:#b9b78f;
+}
+
+.talk h3{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.talk p{
+    padding-bottom: 1rem;
+    text-align: center;
+    line-height: 3rem;
+    width: 40rem;
+
+}
+
+.talk img{
+    width: 100%;
+    height: 100%;
+}
 
     
 

@@ -1,0 +1,40 @@
+.form-container{
+    height: 50.2rem;
+}
+
+.form{
+    width: 35rem;
+    margin: 3rem;
+    padding-bottom: 2rem;
+  
+}
+
+.input{
+   font-size: 1.2rem;
+    border: none;
+    border-bottom: 3px solid black; 
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    background-color: #b9b78f;
+}
+
+.textarea{
+    width: 35rem;
+    height: 16rem;
+    resize: none;
+    border: none;
+    padding-bottom: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    background-color: #b9b78f;
+    
+}
+
+.button{
+    width: 35rem;
+    color: #fff;
+    background-color: black;
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: .5rem;
+}

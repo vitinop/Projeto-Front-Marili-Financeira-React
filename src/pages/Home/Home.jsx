@@ -3,9 +3,14 @@ import Carousel from "react-bootstrap/Carousel";
 import videobg from "../../assets/bgvideo.mp4";
 import Familia from "../../assets/img/familia_feliz_1.jpg";
 import Quote from "../../assets/icons/quote.png";
+import Marili from "../../assets/img/marili.jpg"
+
+
+
 import { Animated } from "react-animated-css";
 import GoogleMapsContainer from "../../components/GoogleMapsContainer/GoogleMapsContainer"
 import "./Home.css";
+import Formulario from "../VamosConversar/VamosConversar"
 
 export default function Home() {
   return (
@@ -52,7 +57,7 @@ export default function Home() {
 
       <Container fluid className="p-0 position-relative">
         <section className="purposeSection d-flex justify-content-center">
-          <div className="purposeText d-flex row flex-wrap justify-content-center text-center">
+          <div className="purposeText d-flex row flex-wrap justify-content-center text-center ">
             <h3 className="p-1">​Consultoria com Propósito</h3>
             <p className="p-2 w-85">
               ​A MR surgiu da necessidade de proteger a segurança patrimonial
@@ -93,8 +98,8 @@ export default function Home() {
       </Container>
 
       {/* Sessão dos card (img a definir) */}
-      <Container className="mt-5">
-        <section className="d-flex flex-wrap row justify-content-center align-items-end p-3">
+      <Container className="mt-5 pt-5">
+        <section className="d-flex flex-wrap row justify-content-center align-items-end p-5 ">
           <div className="imgCardContainer d-flex colunm flex-nowrap justify-content-lg-end align-items-end  ">
             <p className="p-2">Conselhos de um consultor de Nova...</p>
           </div>
@@ -111,8 +116,8 @@ export default function Home() {
 
       {/* Sessaõ dos depoimentos */}
       <Container className="mt-5">
-        <section className="d-flex flex-wrap justify-content-center text-center">
-          <div className="titleDepositions">
+        <section className="d-flex flex-wrap justify-content-center text-center ">
+          <div className="titleDepositions p-5 mt-5">
             <h3>Depoimentos de Clientes</h3>
             <h4 className="p-3">O que dizem por aí?</h4>
             <p>
@@ -125,7 +130,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="card-container d-flex justify-content-center row flex-wrap align-items-center ">
+          <div className="card-container d-flex justify-content-center row flex-wrap align-content-between ">
             {/* Definir svg pro Quote */}
             <img src={Quote} alt="" />
 
@@ -139,7 +144,7 @@ export default function Home() {
             <p className="nameClient">Lisiane Xiaia Silva, Porto Alegre/RS</p>
           </div>
 
-          <div className="card-container d-flex justify-content-center row flex-wrap align-items-center">
+          <div className="card-container d-flex justify-content-center row flex-wrap align-content-between">
             <img src={Quote} alt="" />
 
             <p>
@@ -157,7 +162,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="card-container d-flex justify-content-center row flex-wrap align-items-center">
+          <div className="card-container d-flex justify-content-center row flex-wrap align-content-between">
             <img src={Quote} alt="" />
 
             <p>
@@ -168,7 +173,7 @@ export default function Home() {
             <p className="nameClient">​Estela de Moura Rey, Porto Alegre/RS</p>
           </div>
 
-          <div className="card-container d-flex justify-content-center row flex-wrap align-items-center">
+          <div className="card-container d-flex justify-content-center row flex-wrap align-content-between">
             <img src={Quote} alt="" />
 
             <p>
@@ -179,14 +184,14 @@ export default function Home() {
             <p className="nameClient">​Carina Reis, Gravataí/RS</p>
           </div>
 
-          <div className="card-container d-flex justify-content-center row flex-wrap align-items-center">
+          <div className="card-container d-flex justify-content-center row flex-wrap align-content-between">
             <img src={Quote} alt="" />
 
             <p>​O serviço foi ágil e eficiente. Recomendo à todos.</p>
             <p className="nameClient">​José, Viamão/RS</p>
           </div>
 
-          <div className="card-container d-flex justify-content-center row flex-wrap align-items-center">
+          <div className="card-container d-flex justify-content-center row flex-wrap align-content-between">
             <img src={Quote} alt="" />
 
             <p>
@@ -197,6 +202,33 @@ export default function Home() {
           </div>
         </section>
       </Container>
+
+
+
+      {/* Sessão do Vamos conversar */}
+      <Container fluid className="mt-5 p-0 ">
+
+        <section fluid className="  talkSection d-flex flex-wrap flex-column">
+          <div className="talckContainer d-flex">
+
+
+          <div className="talk  ">
+            <h3>
+              Vamos Conversar?
+            </h3>
+              <p>​Conta pra nós os teus objetivos e os teus desafios, e através de uma análise personalizada, 
+              vamos te ajudar a manter a estabilidade financeira do
+               teu patrimônio de uma forma SUSTENTÁVEL.</p>
+          <Formulario/>
+         
+          </div>
+          <div className="talk">
+               <img src={Marili} alt="" />
+               </div> 
+               </div>
+        </section>
+      </Container>
+
       <GoogleMapsContainer/>
       
     </>
