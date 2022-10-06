@@ -58,8 +58,8 @@ export default function Home() {
       <Container fluid className="p-0 position-relative">
         <section className="purposeSection d-flex justify-content-center">
           <div className="purposeText d-flex row flex-wrap justify-content-center text-center ">
-            <h3 className="p-1">​Consultoria com Propósito</h3>
-            <p className="p-2 w-85">
+            <h3 className="pt-5">​Consultoria com Propósito</h3>
+            <p className="p-4 w-85">
               ​A MR surgiu da necessidade de proteger a segurança patrimonial
               dos nossos clientes.
               <br />
@@ -208,8 +208,8 @@ export default function Home() {
       {/* Sessão do Vamos conversar */}
       <Container fluid className="mt-5 p-0 ">
 
-        <section fluid className="  talkSection d-flex flex-wrap flex-column">
-          <div className="talckContainer d-flex">
+        <section  className="  talkSection d-flex  flex-column flex-wrap justify-content-center">
+          <div className="talckContainer d-flex ">
 
 
           <div className="talk  ">

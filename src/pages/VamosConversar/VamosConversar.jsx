@@ -11,7 +11,7 @@ export default function Formulário() {
   const [message, setMessage] = useState('')
 
   return (
-    <Container className=' p-0 m-0 form-container d-flex justify-content-center align-itens-center'>
+    <Container fluid className=' p-0 form-container d-flex justify-content-center align-itens-center'>
 
       <form className="form d-flex align-items-stretch  flex-wrap flex-column" onSubmit={() => { }}>
         <input

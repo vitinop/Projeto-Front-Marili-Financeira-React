@@ -75,7 +75,7 @@
     margin: 2.5rem;
     width: 350px;
     height: 350px;
-    border: 1px solid black;
+   
 }
 
 
@@ -99,6 +99,7 @@
 /* Configuração do vamos conversar */
 
 .talk{
+    width: 100%;
     background-color:#b9b78f;
 }
 
