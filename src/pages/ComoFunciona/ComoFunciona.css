@@ -1,0 +1,22 @@
+.comoFuncionaTitle h3{
+    color: #b9b78f;
+    text-align: center;
+    padding: 8rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+    
+}
+
+.comoFuncionaTextImg img{
+  
+    width: 70%;
+    object-fit: cover;
+    height: 25rem;
+}
+
+.comoFuncionaTextImg p{
+    text-align: center;
+    
+    font-size: 1.3rem;
+    color: #b9b78f;
+}
