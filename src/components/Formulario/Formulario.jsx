@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container } from "react-bootstrap";
+import {BsChatLeft} from "react-icons/bs"
 import "./Formulario.css";
 
 export default function Formulario() {
@@ -12,11 +12,15 @@ export default function Formulario() {
   return (
     <div className="form-container p-4 d-flex flex-column align-items-center justify-content-center text-center">
       <h3>Vamos Conversar?</h3>
+      <BsChatLeft className="mb-4" size={40}/>
+
       <p>
         ​Conta pra nós os teus objetivos e os teus desafios, e através de uma
         análise personalizada,  vamos te ajudar a manter a estabilidade
         financeira do teu patrimônio de uma forma SUSTENTÁVEL.
       </p>
+
+      
 
       <form
         className="formField d-flex flex-column  align-items-center"

@@ -2,7 +2,7 @@ import { Button, Container } from "react-bootstrap";
 import InstagramIcon from "../../assets/icons/instagram_logo_icon.svg";
 import FacebookIcon from "../../assets/icons/facebook_logo_icon.svg";
 import LinkedinIcon from "../../assets/icons/linkedin_logo_icon.svg";
-import {BsPhone} from "react-icons/bs"
+import {BsPhone, BsTelephoneForward,BsPinMap} from "react-icons/bs"
 import {AiOutlineMail} from "react-icons/ai"
 import "./Footer.css";
 
@@ -14,16 +14,24 @@ export default function Footer() {
           <div className="footerGlobalDescription d-flex flex-column align-items-center text-center">
             <h3>Marili Réquia Corretora de Seguros</h3>
             <div className="footerGlobalContact text-center">
-              <p><AiOutlineMail/>  negocios@marilirequia.com.br</p>
-              <p>+55 (51) 3366.3366 /<BsPhone/> (51) 9 9951.5486</p>
-              <span>
+               <div className="d-flex flex-column align-items-center mb-4">
+                <div>
+                  <BsPinMap/>
+                </div>
+                <div>
                 Endereço:
                 <br />
                 Rua Souza Lobo, 786 - Vila Jardim
                 <br />
-                Porto Alegre - RS <br />
-                CEP:91320-320
-              </span>
+                Porto Alegre - RS 
+                <br />
+                CEP : 91320-320
+                   
+                </div>
+              </div>
+              <p><AiOutlineMail/>  negocios@marilirequia.com.br</p>
+              <p><BsTelephoneForward/>+55 (51) 3366.3366 /<BsPhone/> (51) 9 9951.5486</p>
+             
             </div>
             <div className="footerGlobalSocialIcons d-flex justify-content-center">
               <Button variant="link" href="/">

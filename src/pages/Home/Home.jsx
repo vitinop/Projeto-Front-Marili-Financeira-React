@@ -22,18 +22,19 @@ export default function Home() {
           muted
         />
         <div className="overlay position-absolute w-100 h-100"></div>
-        <div className="p-3 position-relative d-flex flex-column align-items-center text-center text-light">
+        <div className="p-5 position-relative d-flex flex-column align-items-center text-center text-light">
           <Animated
             animationIn="fadeInUp"
             animationInDuration={1000}
             isVisible={true}
+            className="p-5"
           >
             <h1>
               O que é Sustentabilidade
               <br />
               Financeira?
             </h1>
-            <h3>Bem vindo (a)!</h3>
+            <h3 className="p-3">Bem vindo (a)!</h3>
           </Animated>
 
           <Animated
@@ -41,7 +42,7 @@ export default function Home() {
             animationInDuration={3000}
             isVisible={true}
           >
-            <p className="mt-5">
+            <p className="mt-3">
               O valor da sustentabilidade financeira se traduz no uso dos
               recursos de forma equilibrada.
               <br />
@@ -55,7 +56,13 @@ export default function Home() {
 
       <Container fluid className="p-0 position-relative">
         <section className="purposeSection d-flex justify-content-center">
-          <div className="purposeText d-flex row flex-wrap justify-content-center text-center ">
+        <Animated
+            animationIn="fadeInUp"
+            animationInDuration={1000}
+            isVisible={true}
+            className="p-3"
+          > 
+          <div className="purposeText d-flex row flex-wrap justify-content-center text-center p-3">
             <h3 className="pt-5">​Consultoria com Propósito</h3>
             <p className="p-4 w-85">
               ​A MR surgiu da necessidade de proteger a segurança patrimonial
@@ -70,6 +77,7 @@ export default function Home() {
 
            
           </div>
+          </Animated>
         </section>
       </Container>
       <Carousel className="purposeImg w-100">
