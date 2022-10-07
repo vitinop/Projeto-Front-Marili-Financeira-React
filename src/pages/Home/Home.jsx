@@ -1,16 +1,14 @@
-import {Container} from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { Animated } from "react-animated-css";
 import Carousel from "react-bootstrap/Carousel";
 import videobg from "../../assets/bgvideo.mp4";
 import Familia from "../../assets/img/familia_feliz_1.jpg";
 import Quote from "../../assets/icons/quote.png";
-import Marili from "../../assets/img/marili.jpg"
+import Marili from "../../assets/img/marili.jpg";
 
-
-
-import { Animated } from "react-animated-css";
-import GoogleMapsContainer from "../../components/GoogleMapsContainer/GoogleMapsContainer"
+import Formulario from "../../components/Formulario/Formulario";
+import GoogleMapsContainer from "../../components/GoogleMapsContainer/GoogleMapsContainer";
 import "./Home.css";
-import Formulario from "../VamosConversar/VamosConversar"
 
 export default function Home() {
   return (
@@ -25,10 +23,10 @@ export default function Home() {
         />
         <div className="overlay position-absolute w-100 h-100"></div>
         <div className="p-3 position-relative d-flex flex-column align-items-center text-center text-light">
-          <Animated 
-          animationIn="fadeInUp"
-          animationInDuration={1000}
-          isVisible={true}
+          <Animated
+            animationIn="fadeInUp"
+            animationInDuration={1000}
+            isVisible={true}
           >
             <h1>
               O que é Sustentabilidade
@@ -38,19 +36,19 @@ export default function Home() {
             <h3>Bem vindo (a)!</h3>
           </Animated>
 
-          <Animated 
-          animationIn="fadeInUp"
-          animationInDuration={3000}
-          isVisible={true}
+          <Animated
+            animationIn="fadeInUp"
+            animationInDuration={3000}
+            isVisible={true}
           >
-          <p className="mt-5">
-            O valor da sustentabilidade financeira se traduz no uso dos recursos
-            de forma equilibrada.
-            <br />
-            Isso significa objetivar a garantia da segurança financeira do seu
-            patrimônio por meio do uso eficiente <br /> dos recursos que temos,
-            sempre com uma visão de longo prazo.
-          </p>
+            <p className="mt-5">
+              O valor da sustentabilidade financeira se traduz no uso dos
+              recursos de forma equilibrada.
+              <br />
+              Isso significa objetivar a garantia da segurança financeira do seu
+              patrimônio por meio do uso eficiente <br /> dos recursos que
+              temos, sempre com uma visão de longo prazo.
+            </p>
           </Animated>
         </div>
       </section>
@@ -70,7 +68,11 @@ export default function Home() {
               seus desafios em tranquilidade.
             </p>
 
-            <Carousel className="purposeImg">
+           
+          </div>
+        </section>
+      </Container>
+      <Carousel className="purposeImg w-100">
               <Carousel.Item interval={2000}>
                 <img
                   className="d-block w-100"
@@ -93,9 +95,6 @@ export default function Home() {
                 />
               </Carousel.Item>
             </Carousel>
-          </div>
-        </section>
-      </Container>
 
       {/* Sessão dos card (img a definir) */}
       <Container className="mt-5 pt-5">
@@ -203,34 +202,17 @@ export default function Home() {
         </section>
       </Container>
 
-
-
       {/* Sessão do Vamos conversar */}
-      <Container fluid className="mt-5 p-0 ">
-
-        <section  className="  talkSection d-flex  flex-column flex-wrap justify-content-center">
-          <div className="talckContainer d-flex ">
-
-
-          <div className="talk  ">
-            <h3>
-              Vamos Conversar?
-            </h3>
-              <p>​Conta pra nós os teus objetivos e os teus desafios, e através de uma análise personalizada, 
-              vamos te ajudar a manter a estabilidade financeira do
-               teu patrimônio de uma forma SUSTENTÁVEL.</p>
-          <Formulario/>
-         
-          </div>
-          <div className="talk">
-               <img src={Marili} alt="" />
-               </div> 
-               </div>
+      <Container fluid className="mt-5 p-0">
+        <section className="talkSection d-flex flex-row justify-content-center">     
+            <Formulario/>   
+            <div className="d-none d-md-inline d-xl-inline">
+              <img src={Marili} alt="" />
+            </div>
         </section>
       </Container>
 
-      <GoogleMapsContainer/>
-      
+      <GoogleMapsContainer />
     </>
   );
 }

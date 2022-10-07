@@ -5,7 +5,7 @@ export default function Whatsapp() {
         <a
           href="https://api.whatsapp.com/send?phone=5551999515486"
           target="_blank"
-          style={{position:'fixed', bottom:'20px', right:'30px', zIndex:'1'}}
+          style={{position:'fixed', bottom:'35px', right:'30px', zIndex:'1'}}
        
         >
           <svg

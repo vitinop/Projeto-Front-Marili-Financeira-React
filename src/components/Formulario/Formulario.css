@@ -1,0 +1,53 @@
+.form-container{
+    background-color: #D3D4BE;
+    border-radius: 8px;
+}
+
+.formField{
+    width: 100%;
+    padding-bottom: 2rem;  
+}
+
+.input{
+    border: none;
+    width: 60%;
+    font-size: 1.2rem;
+   
+    border-bottom: 1px solid black; 
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #D3D4BE;
+}
+
+
+.textarea{
+    border: none;
+    width: 60%;
+    height: 8em;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border-bottom: 1px solid black; 
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color:#D3D4BE;
+    resize: none; 
+}
+
+.button{
+    width:15rem;
+    border-radius: 8px;
+    color: #fff;
+    background-color: black;
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+@media screen and (max-width: 768px){
+    .input{
+        width: 80%;
+    }
+    .textarea{
+        width: 80%;
+    }
+}
