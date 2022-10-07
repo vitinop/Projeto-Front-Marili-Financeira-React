@@ -29,12 +29,12 @@ export default function Home() {
             isVisible={true}
             className="p-5"
           >
-            <h1>
-              O que é Sustentabilidade
+            <h1 className="title-banner">
+              O que é <br /> Sustentabilidade
               <br />
               Financeira?
             </h1>
-            <h3 className="p-3">Bem vindo (a)!</h3>
+            <h3 className="pt-3 subtitle-banner">Bem vindo (a)!</h3>
           </Animated>
 
           <Animated
@@ -42,12 +42,12 @@ export default function Home() {
             animationInDuration={3000}
             isVisible={true}
           >
-            <p className="mt-3">
+            <p className="mt-1 text-banner">
               O valor da sustentabilidade financeira se traduz no uso dos
               recursos de forma equilibrada.
-              <br />
-              Isso significa objetivar a garantia da segurança financeira do seu
-              patrimônio por meio do uso eficiente <br /> dos recursos que
+             
+              Isso significa objetivar a garantia da <br/>  segurança financeira do seu
+              patrimônio por meio do uso eficiente dos recursos que
               temos, sempre com uma visão de longo prazo.
             </p>
           </Animated>
@@ -69,7 +69,7 @@ export default function Home() {
               dos nossos clientes.
               <br />
               Atuamos com atendimento personalizado, traçando um planejamento
-              estratégico de sustentabilidade financeira para o seu patrimônio.
+              estratégico de sustentabilidade financeira para o seu <br /> patrimônio.
               <br />
               Ajudamos nossos clientes a viabilizar seus objetivos e transformar
               seus desafios em tranquilidade.
@@ -124,9 +124,9 @@ export default function Home() {
       {/* Sessaõ dos depoimentos */}
       <Container className="mt-5">
         <section className="d-flex flex-wrap justify-content-center text-center ">
-          <div className="titleDepositions p-5 mt-5">
+          <div className="titleDepositions p-2 mt-3">
             <h3>Depoimentos de Clientes</h3>
-            <h4 className="p-3">O que dizem por aí?</h4>
+            <h4 className="p-3">O que dizem por aí</h4>
             <p>
               ​Desde 1998 meus serviços de consultoria profissional conquistam
               clientes fiéis. Como consultora de sustentabilidade financeira em

@@ -6,6 +6,16 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
    
 }
+
+.footerGlobalDescription h3{
+    font-weight: 600;
+}
+
+.footerGlobalContact p{
+    font-size: 0.9em;
+}
+
+
 .socialIco {
    padding-right: 8px;
     padding-left: 8px;
@@ -16,4 +26,8 @@
 }
 .socialIco:hover {
     transform: scale(1.2)
+}
+
+.footerCopyright p{
+    font-size: 0.8em;
 }

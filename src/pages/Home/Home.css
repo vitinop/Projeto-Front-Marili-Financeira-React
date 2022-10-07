@@ -8,7 +8,19 @@
     background-color: rgba(0, 0, 0, .2);
 }
 
+.title-banner{
+    font-weight: 800;
+    font-size: 50px;
+}
 
+.subtitle-banner{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.text-banner{
+    font-size: 18px;
+}
 /* Configuração de Consultoria com propósito */
 
 .purposeSection {
@@ -16,12 +28,15 @@
 }
 
 .purposeText h3 {
-    font-size: 2rem;
+    margin-top: 3rem;
+    font-size: 40px;
+    font-weight: 400;
     color: #fff;
 }
 
 .purposeText p {
-    font-size: small;
+    font-size: .9em;
+   font-weight: 100;
     text-align: center;
     line-height: 1.8rem;
     color: #fff;
@@ -51,8 +66,7 @@
 .imgCardContainer p {
     color: #fff;
     font-size: 20px;
-    text-align: justify;
-    font-weight: 400;
+    font-weight: 600;
 
 }
 
@@ -61,16 +75,18 @@
 /* Configuração dos depoimentos */
 .titleDepositions h3 {
     color: #b9b78f;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .titleDepositions h4 {
+    
+    font-size: 1.2em;
     text-align: center;
 }
 
 .titleDepositions p {
     color: black;
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 2rem;
 }
 
@@ -92,7 +108,7 @@
 }
 
 .card-container p {
-    font-size: 0.9rem;
+    font-size: 1em;
 
 
 }
