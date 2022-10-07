@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       <Container fluid className="p-0 position-relative">
-        <section className="purposeSection d-flex justify-content-center">
+        <section className="purposeSection d-flex justify-content-center align-items-center">
         <Animated
             animationIn="fadeInUp"
             animationInDuration={1000}
@@ -211,8 +211,8 @@ export default function Home() {
       </Container>
 
       {/* Sessão do Vamos conversar */}
-      <Container fluid className="mt-5 p-0">
-        <section className="talkSection d-flex flex-row justify-content-center">     
+      <Container fluid className="talkSection mt-5 p-0">
+        <section className="d-flex flex-row justify-content-center">     
             <Formulario/>   
             <div className="d-none d-md-inline d-xl-inline">
               <img src={Marili} alt="" />
