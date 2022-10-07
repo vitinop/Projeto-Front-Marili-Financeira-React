@@ -7,16 +7,23 @@
     
 }
 
-.comoFuncionaTextImg img{
-  
-    width: 70%;
-    object-fit: cover;
+.comoFuncionaImg{
+    width: 50em;
+    background-position: center;
+    background-size: cover;
     height: 25rem;
 }
 
-.comoFuncionaTextImg p{
+.comoFuncionaText {
+  padding: 5rem;
+    width: 30em;
+}
+
+.comoFuncionaText p{
     text-align: center;
-    
     font-size: 1.3rem;
     color: #b9b78f;
 }
+
+
+ 
