@@ -8,7 +8,7 @@
 }
 
 .comoFuncionaImg{
-    width: 50em;
+    width: 50vw;
     background-position: center;
     background-size: cover;
     height: 25rem;
@@ -24,6 +24,10 @@
     font-size: 1.3rem;
     color: #b9b78f;
 }
-
+@media screen and (max-width: 768px){
+    .comoFuncionaImg{
+        width: 100vw;
+}
+}
 
  
