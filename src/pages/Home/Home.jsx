@@ -64,12 +64,12 @@ export default function Home() {
           > 
           <div className="purposeText d-flex row flex-wrap justify-content-center text-center p-3">
             <h3 className="pt-5">​Consultoria com Propósito</h3>
-            <p className="p-4 w-85">
+            <p className="p-4">
               ​A MR surgiu da necessidade de proteger a segurança patrimonial
               dos nossos clientes.
               <br />
               Atuamos com atendimento personalizado, traçando um planejamento
-              estratégico de sustentabilidade financeira para o seu <br /> patrimônio.
+              estratégico de sustentabilidade financeira para o seu patrimônio.
               <br />
               Ajudamos nossos clientes a viabilizar seus objetivos e transformar
               seus desafios em tranquilidade.
