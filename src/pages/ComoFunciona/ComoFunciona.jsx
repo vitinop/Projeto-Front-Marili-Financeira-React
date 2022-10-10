@@ -13,8 +13,8 @@ export default function ComoFunciona() {
           <div className='comoFuncionaTitle'>
             <h3>Como funciona:</h3>
           </div>
-          <div></div>
-          <div className='d-flex align-items-center justify-content-center flex-row flex-wrap flex-lg-nowrap '>
+
+            <div className='d-flex align-items-center justify-content-center flex-row flex-wrap flex-lg-nowrap '>
             <div className='comoFuncionaImg' style={{ backgroundImage: `url(${Contrato})` }}>
             </div>
             <div className='comoFuncionaText'>
@@ -25,9 +25,50 @@ export default function ComoFunciona() {
             <div className='comoFuncionaImg' style={{ backgroundImage: `url(${Contrato})` }}>
             </div>
             <div className='comoFuncionaText'>
-              <p>​Identificamos os seus desafios e os seus objetivos</p>
+              <p>​Analisamos o seu patrimônio</p>
             </div>
           </div>
+
+          <div className='d-flex align-items-center justify-content-center flex-row flex-wrap flex-lg-nowrap '>
+            <div className='comoFuncionaImg' style={{ backgroundImage: `url(${Contrato})` }}>
+            </div>
+            <div className='comoFuncionaText'>
+              <p>​Identificamos sua viabilidade financeira</p>
+            </div>
+          </div>
+          <div className='d-flex align-items-center justify-content-center flex-row-reverse flex-wrap flex-lg-nowrap'>
+            <div className='comoFuncionaImg' style={{ backgroundImage: `url(${Contrato})` }}>
+            </div>
+            <div className='comoFuncionaText'>
+              <p>​Traçamos o planejamento estratégico</p>
+            </div>
+          </div>
+
+          <div className='d-flex align-items-center justify-content-center flex-row flex-wrap flex-lg-nowrap '>
+            <div className='comoFuncionaImg' style={{ backgroundImage: `url(${Contrato})` }}>
+            </div>
+            <div className='comoFuncionaText'>
+              <p>​Garantimos sua sustentabilidade financeira</p>
+            </div>
+          </div>
+          <div className='d-flex align-items-center justify-content-center flex-row-reverse flex-wrap flex-lg-nowrap'>
+            <div className='comoFuncionaImg' style={{ backgroundImage: `url(${Contrato})` }}>
+            </div>
+            <div className='comoFuncionaText'>
+              <p>​Suporte em tempo integral</p>
+            </div>
+          </div>
+
+          <div className='d-flex align-items-center justify-content-center flex-row flex-wrap flex-lg-nowrap '>
+            <div className='comoFuncionaImg' style={{ backgroundImage: `url(${Contrato})` }}>
+            </div>
+            <div className='comoFuncionaText'>
+              <p>​Você fica tranquilo</p>
+            </div>
+          </div>
+
+
+
 
 
 

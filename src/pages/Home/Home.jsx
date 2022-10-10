@@ -108,16 +108,17 @@ export default function Home() {
       <Container className="mt-5 pt-5">
         <section className="d-flex flex-wrap row justify-content-center align-items-end p-5 ">
           <div className="imgCardContainer d-flex colunm flex-nowrap justify-content-lg-end align-items-end  ">
-            <p className="p-2">Conselhos de um consultor de Nova...</p>
+            <a href="/"><p className="p-2">Conselhos de um consultor de Nova...</p></a>
           </div>
 
           <div className="imgCardContainer d-flex colunm flex-nowrap justify-content-lg-end align-items-end ">
-            <p className="p-2">8 razões para fazer anotações de uma...</p>
+            <a href="/"><p className="p-2">8 razões para fazer anotações de uma...</p></a>
           </div>
 
           <div className="imgCardContainer d-flex colunm flex-nowrap justify-content-lg-end align-items-end ">
-            <p className="p-2">Por que trabalhos de Consultoria estão em...</p>
+            <a href="/"><p className="p-2">Por que trabalhos de Consultoria estão em...</p></a>
           </div>
+
         </section>
       </Container>
 

@@ -63,6 +63,10 @@
 
 }
 
+.imgCardContainer a{
+    text-decoration: none;
+}
+
 .imgCardContainer p {
     color: #fff;
     font-size: 20px;
