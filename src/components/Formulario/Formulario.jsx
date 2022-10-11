@@ -87,7 +87,7 @@ export default function Formulario() {
   }
 
   return (
-    <div className="form-container p-4 d-flex flex-column align-items-center justify-content-center text-center">
+    <div className="form-container d-flex flex-column align-items-center justify-content-center text-center">
       <h3>Vamos Conversar?</h3>
       <BsChatLeft className="mb-4" size={40} />
 
