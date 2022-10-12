@@ -78,57 +78,14 @@ export default function Formulario() {
   });
 
 
-  // const valoresIniciais = {
-  //   name: "",
-  //   telefone: "",
-  //   email: "",
-  //   assunto: "",
-  //   message: ""
-  // };
 
-
-
-
-  // const [formValues, setFormValues] = useState(valoresIniciais);
-
-  // const [status, setStatus] = useState({
-  //   type: '',
-  //   mensagem: ''
-  // });
-
-  // const getChange = (event, key) => {
-  //   const { value } = event.currentTarget;
-  //   setFormValues({ ...formValues, [key]: value });
-  // };
 
   const submit = (e) => {
     e.preventDefault();
 
     console.log(formik.values);
 
-    
-    // if (!validate()) return;
 
-    // if (validate()) {
-    //   setStatus({
-    //     type: "success",
-    //     mensagemStatus: "Mensagem enviada com sucesso!"
-    //   });
-    //   setFormValues({
-    //     name: "",
-    //     telefone: "",
-    //     email: "",
-    //     assunto: "",
-    //     message: ""
-    //   });
-    // } else {
-    //   setStatus({
-    //     type: "error",
-    //     mensagemStatus: "Preencha todos campos corretamente!"
-    //   });
-    // }
-
-    // console.log("new", formValues);
 
 
   };
@@ -137,34 +94,7 @@ export default function Formulario() {
 
 
 
-  // function validate() {
-  //   if (!formValues.name)
-  //     return setStatus({
-  //       type: "error",
-  //       mensagemStatus: "Erro: Necessário preencher o campo nome!"
-  //     });
-  //   if (!formValues.telefone)
-  //     return setStatus({
-  //       type: "error",
-  //       mensagemStatus: "Erro: Necessário preencher o telefone!"
-  //     });
-  //   if (!formValues.email)
-  //     return setStatus({
-  //       type: "error",
-  //       mensagemStatus: "Erro: Necessário preencher de email!"
-  //     });
-  //   if (!formValues.assunto)
-  //     return setStatus({
-  //       type: "error",
-  //       mensagemStatus: "Erro: Necessário preencher o campo assunto!"
-  //     });
-  //   if (!formValues.message)
-  //     return setStatus({
-  //       type: "error",
-  //       mensagemStatus: "Erro: Necessário preencher o campo com sua mensagem!"
-  //     });
-  //   return true;
-  // }
+  //
 
   return (
     <div className="form-container d-flex flex-column align-items-center justify-content-center text-center">
@@ -248,16 +178,7 @@ export default function Formulario() {
           Enviar
         </button>
       </form>
-      {/* {status.type === "success" ? (
-        <p className="text-success">{status.mensagem}</p>
-      ) : (
-        ""
-      )}
-      {status.type === "error" ? (
-        <p className="text-danger">{status.mensagem}</p>
-      ) : (
-        ""
-      )} */}
+
     </div>
   );
 }
