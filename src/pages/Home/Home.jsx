@@ -1,3 +1,6 @@
+import { useRef,useEffect,useState } from "react";
+import { useInView } from "react-intersection-observer";
+
 import { Container } from "react-bootstrap";
 import { Animated } from "react-animated-css";
 import Carousel from "react-bootstrap/Carousel";
@@ -11,6 +14,12 @@ import GoogleMapsContainer from "../../components/GoogleMapsContainer/GoogleMaps
 import "./Home.css";
 
 export default function Home() {
+  const{ ref: myRef, inView: myElementIsVisible} = useInView();
+  // if  (myElementIsVisible) {
+
+  // }
+
+  
   return (
     <>
       <section className="w-100">
@@ -55,8 +64,9 @@ export default function Home() {
       </section>
 
       <Container fluid className="p-0 position-relative">
-        <section className="purposeSection d-flex justify-content-center align-items-center">
+        <section  ref={myRef} className="purposeSection d-flex justify-content-center align-items-center">
         <Animated
+            innerRef = {myRef}
             animationIn="fadeInUp"
             animationInDuration={1000}
             isVisible={true}
