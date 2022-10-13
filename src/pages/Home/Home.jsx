@@ -1,4 +1,4 @@
-import { useRef,useEffect,useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 import { Container } from "react-bootstrap";
@@ -14,12 +14,25 @@ import GoogleMapsContainer from "../../components/GoogleMapsContainer/GoogleMaps
 import "./Home.css";
 
 export default function Home() {
-  const{ ref: myRef, inView: myElementIsVisible} = useInView();
-  // if  (myElementIsVisible) {
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
+  const { ref: depRef, inView: depElementIsVisible } = useInView();
 
-  // }
-
+  const [divVisible, setDivVisible] = useState(false);
+  const [depVisible, setDepVisible] = useState(false);
   
+  useEffect(() => {
+    if (myElementIsVisible) {
+      setDivVisible(true);
+    }
+  }, [myElementIsVisible]);
+  
+  useEffect(() => {
+    if (depElementIsVisible) {
+      setDepVisible(true);
+    }
+  }, [depElementIsVisible]);
+
+
   return (
     <>
       <section className="w-100">
@@ -53,89 +66,93 @@ export default function Home() {
           >
             <p className="mt-1 text-banner">
               O valor da sustentabilidade financeira se traduz no uso dos
-              recursos de forma equilibrada.
-             
-              Isso significa objetivar a garantia da <br/>  segurança financeira do seu
-              patrimônio por meio do uso eficiente dos recursos que
-              temos, sempre com uma visão de longo prazo.
+              recursos de forma equilibrada. Isso significa objetivar a garantia
+              da <br /> segurança financeira do seu patrimônio por meio do uso
+              eficiente dos recursos que temos, sempre com uma visão de longo
+              prazo.
             </p>
           </Animated>
         </div>
       </section>
 
       <Container fluid className="p-0 position-relative">
-        <section  ref={myRef} className="purposeSection d-flex justify-content-center align-items-center">
-        <Animated
-            innerRef = {myRef}
+        <section
+          
+          className="purposeSection d-flex justify-content-center align-items-center"
+        >
+        
+            <div className="purposeText d-flex row flex-wrap justify-content-center text-center p-3">
+            <Animated
+            innerRef={myRef}
             animationIn="fadeInUp"
             animationInDuration={1000}
-            isVisible={true}
+            isVisible={divVisible}
             className="p-3"
-          > 
-          <div className="purposeText d-flex row flex-wrap justify-content-center text-center p-3">
-            <h3 className="pt-5">​Consultoria com Propósito</h3>
-            <p className="p-4">
-              ​A MR surgiu da necessidade de proteger a segurança patrimonial
-              dos nossos clientes.
-              <br />
-              Atuamos com atendimento personalizado, traçando um planejamento
-              estratégico de sustentabilidade financeira para o seu patrimônio.
-              <br />
-              Ajudamos nossos clientes a viabilizar seus objetivos e transformar
-              seus desafios em tranquilidade.
-            </p>
-
-           
-          </div>
+          >
+              <h3>​Consultoria com Propósito</h3>
+              <p className="p-4">
+                ​A MR surgiu da necessidade de proteger a segurança patrimonial
+                dos nossos clientes.
+                <br />
+                Atuamos com atendimento personalizado, traçando um planejamento
+                estratégico de sustentabilidade financeira para o seu
+                patrimônio.
+                <br />
+                Ajudamos nossos clientes a viabilizar seus objetivos e
+                transformar seus desafios em tranquilidade.
+              </p>
           </Animated>
+            </div>
         </section>
       </Container>
       <Carousel className="purposeImg w-100">
-              <Carousel.Item interval={2000}>
-                <img
-                  className="d-block w-100"
-                  src={Familia}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item interval={2000}>
-                <img
-                  className="d-block w-100"
-                  src={Familia}
-                  alt="Second slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item interval={2000}>
-                <img
-                  className="d-block w-100"
-                  src={Familia}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
-            </Carousel>
+        <Carousel.Item interval={2000}>
+          <img className="d-block w-100" src={Familia} alt="First slide" />
+        </Carousel.Item>
+        <Carousel.Item interval={2000}>
+          <img className="d-block w-100" src={Familia} alt="Second slide" />
+        </Carousel.Item>
+        <Carousel.Item interval={2000}>
+          <img className="d-block w-100" src={Familia} alt="Third slide" />
+        </Carousel.Item>
+      </Carousel>
 
       {/* Sessão dos card (img a definir) */}
       <Container className="mt-5 pt-5">
         <section className="d-flex flex-wrap row justify-content-center align-items-end p-5 ">
           <div className="imgCardContainer d-flex colunm flex-nowrap justify-content-lg-end align-items-end  ">
-            <a href="/"><p className="p-2">Conselhos de um consultor de Nova...</p></a>
+            <a href="/">
+              <p className="p-2">Conselhos de um consultor de Nova...</p>
+            </a>
           </div>
 
           <div className="imgCardContainer d-flex colunm flex-nowrap justify-content-lg-end align-items-end ">
-            <a href="/"><p className="p-2">8 razões para fazer anotações de uma...</p></a>
+            <a href="/">
+              <p className="p-2">8 razões para fazer anotações de uma...</p>
+            </a>
           </div>
 
           <div className="imgCardContainer d-flex colunm flex-nowrap justify-content-lg-end align-items-end ">
-            <a href="/"><p className="p-2">Por que trabalhos de Consultoria estão em...</p></a>
+            <a href="/">
+              <p className="p-2">
+                Por que trabalhos de Consultoria estão em...
+              </p>
+            </a>
           </div>
-
         </section>
       </Container>
 
       {/* Sessaõ dos depoimentos */}
-      <Container className="mt-5">
+      <Container>
         <section className="d-flex flex-wrap justify-content-center text-center ">
-          <div className="titleDepositions p-2 mt-3">
+          <div className="titleDepositions">
+          <Animated
+            innerRef={depRef}
+            animationIn="fadeInUp"
+            animationInDuration={1000}
+            isVisible={depVisible}
+            className="p-3"
+          >
             <h3>Depoimentos de Clientes</h3>
             <h4 className="p-3">O que dizem por aí</h4>
             <p>
@@ -146,6 +163,7 @@ export default function Home() {
               serviços de acordo com suas necessidades específicas. Leia o que
               meus clientes têm a dizer e mande uma mensagem.
             </p>
+          </Animated>
           </div>
 
           <div className="card-container d-flex justify-content-center row flex-wrap align-content-between ">
@@ -223,11 +241,11 @@ export default function Home() {
 
       {/* Sessão do Vamos conversar */}
       <Container fluid className="talkSection mt-5 p-0">
-        <section className="d-flex flex-row justify-content-center">     
-            <Formulario/>   
-            <div className="d-none d-md-inline d-xl-inline">
-              <img src={Marili} alt="" />
-            </div>
+        <section className="d-flex flex-row justify-content-center">
+          <Formulario />
+          <div className="d-none d-md-inline d-xl-inline">
+            <img src={Marili} alt="" />
+          </div>
         </section>
       </Container>
 

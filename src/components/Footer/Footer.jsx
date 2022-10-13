@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <>
       { }
-      <Container fluid className="footerGlobal pt-5">
+      <div className="footerGlobal pt-5">
         <footer>
           <div className="footerGlobalDescription d-flex flex-column align-items-center text-center">
             <h3>Marili Réquia Corretora de Seguros</h3>
@@ -51,7 +51,7 @@ export default function Footer() {
             </div>
           </div>
         </footer>
-      </Container>
+      </div>
     </>
   );
 }
